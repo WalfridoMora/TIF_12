@@ -1,0 +1,97 @@
+
+<mat-card >
+    <mat-card-title>
+            <div class="main-div">
+                    <img src="../../assets/ImmunotecLogo_es.png" alt="The Immunotec Family Logo" style="height: 50%; width: 50%; " class="img-responsive" />
+                   <!-- <h3>La Familia Immunotec<sup>®</sup> </h3>    -->
+                  </div>
+                  <!-- <div class="main-div">
+                        <h4 > <i>"Compartiendo la ciencia de vivir mejor"</i></h4> 
+                  </div> -->
+                  <button mat-raised-button  [matMenuTriggerFor]="menu" style="float: right">
+                        <mat-icon>language</mat-icon>
+                        <span class="mat-body-2" style="color:darkblue;" >Español</span>
+                       
+                    </button>
+                    <button mat-raised-button  [matMenuTriggerFor]="menu2" >
+                        <mat-icon>menu</mat-icon>
+                        <span class="mat-body-2" style="color:darkblue;">Menú</span>
+                    </button>  
+    </mat-card-title>  
+    <mat-card-content>
+          
+      
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <!-- <mat-icon>settings</mat-icon> -->
+          
+            <span class="mat-body-2" style="color:darkblue;" routerLink="/homees"><img style="float: left" src="assets/icons8-spain-flag-48.png" alt="Spanish Language">Español</span>
+        </button>
+        <button mat-menu-item>
+            
+            <span  class="mat-body-2" style="color:darkblue;" routerLink="/homeen"><img style="float: left" src="assets/icons8-usa-48.png" alt="Eglish Language">Inglés</span>
+          </button>
+      </mat-menu>
+      
+        <mat-menu #menu2="matMenu">
+            
+                      
+            <button mat-menu-item>
+              <!-- <mat-icon>store</mat-icon> -->
+              <span routerLink="/homees"class="mat-body-2" style="color:darkblue;"><img style="float: left; " src="https://img.icons8.com/ultraviolet/40/000000/new-york.png">Inicio</span>
+            </button>
+            
+            <button mat-menu-item [matMenuTriggerFor]="subMenuScience" >                
+                <!-- <mat-icon>brightness_5</mat-icon> -->
+                <span class="mat-body-2" style="color:darkblue;"><img style="float: left; " src="https://img.icons8.com/ultraviolet/40/000000/idea.png">Ciencia</span>
+            </button>
+            <button mat-menu-item >                
+                <!-- <mat-icon>shopping_cart</mat-icon> -->
+                <span class="mat-body-2" style="color:darkblue;"><a target ="_blank" href='https://www.immunotec.com/w3/products'><img style="float: left" src="https://img.icons8.com/ultraviolet/40/000000/shopping-cart.png">Comprar Productos Immunotec</a></span>
+            </button> 
+            
+            <button mat-menu-item [matMenuTriggerFor]="subMenuBusiness" >                
+                <!-- <mat-icon>attach_money</mat-icon> -->
+                <span class="mat-body-2" style="color:darkblue;"><img style="float: left" src="https://img.icons8.com/ultraviolet/40/000000/money-bag.png">Oportunidad de Negocio</span>
+            </button> 
+                      
+                
+                
+            
+            
+          </mat-menu>
+          
+        <mat-menu #subMenuScience="matMenu">
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/glut_es">Glutatión</span>
+            </button >
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/imm_es">Immunocal</span>
+            </button>
+            <button mat-menu-item >            
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/pat_es">Patentes</span>
+            </button>
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/test_es">Testimonios</span>
+            </button>
+            
+            
+        </mat-menu>
+        <mat-menu #subMenuBusiness="matMenu">
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/earn_es">Immunotec - "Cómo ganar dinero"</span>
+            </button >
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/plan_es">Plan de Compensación</span>
+            </button>
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;" routerLink="/consult_test_es">Retratos de Liderazgo</span>
+            </button>
+            <button mat-menu-item>
+                <span class="mat-body-2" style="color:darkblue;"><a target ="_blank" href='https://www.immunotec.com/w3/enrollment'>Comience su Propio Negocio</a></span>
+            </button>
+            
+        </mat-menu>
+    </mat-card-content>
+</mat-card>
+<!-- </div> -->
